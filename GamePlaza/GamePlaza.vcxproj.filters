@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="jsonparser">
+      <UniqueIdentifier>{ee6ca704-668f-41c4-a177-a8b2aa3ebfb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{2aa45a15-22f3-464c-9b70-0525505d9887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{a6864108-d7ca-46f6-a6c7-421b5777320d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="detect">
+      <UniqueIdentifier>{332f7165-fc09-47a6-b544-ca85628ee381}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\GamePlaza.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GamePlaza.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\idr_main.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\BUGLE.wav">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Res\USER_STATUS.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TABLE_READY.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TABLE_LOCK.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Res\SERVER_LIST_IMAGE.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Res\CONNECT_STATUS.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="Res\HAND.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GamePlaza.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePlazaDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCustomFace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgIndividualInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLogon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FindUserDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalUnits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IGamePlaza.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagerClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlazaViewItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomViewItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerItemView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemOption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TableFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserCompanionList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInfoView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserListView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Zip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonBuild.h">
+      <Filter>jsonparser</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonParser.h">
+      <Filter>jsonparser</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatConnectCallbackWrapper.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectorMgr.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD_Baccarat.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicDef.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomError.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="DetectIP.H">
+      <Filter>detect</Filter>
+    </ClInclude>
+    <ClInclude Include="PPCLogIn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PPCSqlite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LastLogusers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCMac.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GamePlaza.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlazaDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCustomFace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgIndividualInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLogon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FindUserDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalUnits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagerClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlazaViewItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomViewItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerItemView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemOption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TableFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserCompanionList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfoView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserListView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonBuild.cpp">
+      <Filter>jsonparser</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonParser.cpp">
+      <Filter>jsonparser</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatConnectCallbackWrapper.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorMgr.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="DetectIP.cpp">
+      <Filter>detect</Filter>
+    </ClCompile>
+    <ClCompile Include="PPCLogIn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PPCSqlite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LastLogusers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PCMac.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

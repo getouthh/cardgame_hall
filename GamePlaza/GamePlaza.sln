@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlaza", "GamePlaza.vcxproj", "{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatComm", "..\..\chat_comm\ChatComm\ChatComm.vcxproj", "{BC9B897A-F955-4B46-8220-70C77A36F24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Admin_Release|Win32 = Admin_Release|Win32
+		Debug_ZY|Win32 = Debug_ZY|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Admin_Release|Win32.ActiveCfg = Release|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Admin_Release|Win32.Build.0 = Release|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Debug_ZY|Win32.ActiveCfg = Debug_U|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Debug_ZY|Win32.Build.0 = Debug_U|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Debug|Win32.Build.0 = Debug|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Release|Win32.ActiveCfg = Release|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Release|Win32.Build.0 = Release|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Template|Win32.ActiveCfg = Release|Win32
+		{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}.Template|Win32.Build.0 = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Admin_Release|Win32.ActiveCfg = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Admin_Release|Win32.Build.0 = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Debug_ZY|Win32.ActiveCfg = Debug_ZY|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Debug_ZY|Win32.Build.0 = Debug_ZY|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Debug|Win32.Build.0 = Debug|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Release|Win32.ActiveCfg = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Release|Win32.Build.0 = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Template|Win32.ActiveCfg = Release|Win32
+		{BC9B897A-F955-4B46-8220-70C77A36F24E}.Template|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_U|Win32">
+      <Configuration>Debug_U</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C0A91A7-DF97-4A33-BC9C-698ED04B82F1}</ProjectGuid>
+    <RootNamespace>GamePlaza</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_U|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_U|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_U|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\common\;..\..\common\include;..\..\opensource;..\..\opensource\libevent-2.0.21-stable\include;..\..\opensource\libevent-2.0.21-stable\WIN32-Code</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>../../../binrun/Client/Debug/game/ppc/ppc.exe</OutputFile>
+      <AdditionalDependencies>ComServiceD.lib;ClientShareD.lib;SkinControlsD.lib;ChannelModuleD.lib;PropertyModuleD.lib;Winmm.lib;Zipd.lib;Utilityd_d10.lib;json_10_mtd.lib;IMUtild.lib;libcommond_D10.lib;ChatCommd.lib;libevent_mdd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\cardgame_common\lib\;..\..\common\lib;..\..\common\lib\cardgame\debug\;..\..\opensource\libevent-2.0.21-stable</AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>../../binrun/Client/Debugpdb/game/$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_U|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\common\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>../../binrun/Debug/GamePlaza.exe</OutputFile>
+      <AdditionalDependencies>ComService_UD.lib;ClientShare_UD.lib;SkinControls_UD.lib;ChannelModule_UD.lib;PropertyModule_UD.lib;Winmm.lib;Zipd.lib;Utilityd_d10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib\;..\..\..\common\lib</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\common\;..\..\common\include;..\..\opensource;..\..\opensource\libevent-2.0.21-stable\include;..\..\opensource\libevent-2.0.21-stable\WIN32-Code</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>../../../binrun/Client/release/game/ppc/ppc.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\cardgame_common\lib\;..\..\common\lib;..\..\common\lib\cardgame\release\;..\..\opensource\libevent-2.0.21-stable</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ComService.lib;ClientShare.lib;SkinControls.lib;ChannelModule.lib;PropertyModule.lib;Winmm.lib;Zipd.lib;Utility_d10.lib;json_10_mt.lib;libcommon_D10.lib;ChatComm.lib;IMUtil.lib;libevent_md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>../../../binrun/Client/releasepdb/game/newppc.pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\BUGLE.wav" />
+    <None Include="Res\CONNECT_STATUS.bmp" />
+    <None Include="res\GamePlaza.ico" />
+    <None Include="res\GamePlaza.rc2" />
+    <None Include="Res\HAND.cur" />
+    <None Include="res\idr_main.ico" />
+    <None Include="Res\SERVER_LIST_IMAGE.bmp" />
+    <None Include="res\TABLE_LOCK.bmp" />
+    <None Include="res\TABLE_READY.bmp" />
+    <None Include="Res\USER_STATUS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChatConnectCallbackWrapper.h" />
+    <ClInclude Include="CMD_Baccarat.h" />
+    <ClInclude Include="ConnectorMgr.h" />
+    <ClInclude Include="DetectIP.H" />
+    <ClInclude Include="DlgCustomFace.h" />
+    <ClInclude Include="DlgIndividualInfo.h" />
+    <ClInclude Include="DlgLogon.h" />
+    <ClInclude Include="DlgOption.h" />
+    <ClInclude Include="DlgStatus.h" />
+    <ClInclude Include="FindUserDlg.h" />
+    <ClInclude Include="GameFrame.h" />
+    <ClInclude Include="GamePlaza.h" />
+    <ClInclude Include="GamePlazaDlg.h" />
+    <ClInclude Include="GlobalUnits.h" />
+    <ClInclude Include="IGamePlaza.h" />
+    <ClInclude Include="JsonBuild.h" />
+    <ClInclude Include="JsonParser.h" />
+    <ClInclude Include="LastLogusers.h" />
+    <ClInclude Include="ManagerClass.h" />
+    <ClInclude Include="PCMac.h" />
+    <ClInclude Include="PlazaViewItem.h" />
+    <ClInclude Include="PPCLogIn.h" />
+    <ClInclude Include="PPCSqlite.h" />
+    <ClInclude Include="PublicDef.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoomError.h" />
+    <ClInclude Include="RoomViewItem.h" />
+    <ClInclude Include="ServerItemView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemOption.h" />
+    <ClInclude Include="TableFrame.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserCompanionList.h" />
+    <ClInclude Include="UserInfoView.h" />
+    <ClInclude Include="UserListView.h" />
+    <ClInclude Include="UserManager.h" />
+    <ClInclude Include="Zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChatConnectCallbackWrapper.cpp" />
+    <ClCompile Include="ConnectorMgr.cpp" />
+    <ClCompile Include="DetectIP.cpp" />
+    <ClCompile Include="DlgCustomFace.cpp" />
+    <ClCompile Include="DlgIndividualInfo.cpp" />
+    <ClCompile Include="DlgLogon.cpp" />
+    <ClCompile Include="DlgOption.cpp" />
+    <ClCompile Include="DlgStatus.cpp" />
+    <ClCompile Include="FindUserDlg.cpp" />
+    <ClCompile Include="GameFrame.cpp" />
+    <ClCompile Include="GamePlaza.cpp" />
+    <ClCompile Include="GamePlazaDlg.cpp" />
+    <ClCompile Include="GlobalUnits.cpp" />
+    <ClCompile Include="JsonBuild.cpp" />
+    <ClCompile Include="JsonParser.cpp" />
+    <ClCompile Include="LastLogusers.cpp" />
+    <ClCompile Include="ManagerClass.cpp" />
+    <ClCompile Include="PCMac.cpp" />
+    <ClCompile Include="PlazaViewItem.cpp" />
+    <ClCompile Include="PPCLogIn.cpp" />
+    <ClCompile Include="PPCSqlite.cpp" />
+    <ClCompile Include="RoomViewItem.cpp" />
+    <ClCompile Include="ServerItemView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_U|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemOption.cpp" />
+    <ClCompile Include="TableFrame.cpp" />
+    <ClCompile Include="UserCompanionList.cpp" />
+    <ClCompile Include="UserInfoView.cpp" />
+    <ClCompile Include="UserListView.cpp" />
+    <ClCompile Include="UserManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlaza.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GamePlaza.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
